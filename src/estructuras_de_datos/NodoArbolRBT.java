@@ -156,7 +156,6 @@ public class NodoArbolRBT<K extends Comparable<K>, V extends Comparable<V> > imp
 			key = pKey;
 			value = pValue;
 		}
-
 		if( isRed( der ) && !isRed(izq)) rotacionIzquierda( );
 		if( isRed( izq ) && izq != null && isRed( izq.getLeft( ) )) rotacionDerecha( );
 		if( isRed( der ) && isRed(izq) ) flipColors( );
